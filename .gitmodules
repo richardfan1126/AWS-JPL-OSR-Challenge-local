@@ -1,0 +1,4 @@
+[submodule "AWS-JPL-OSR-Challenge"]
+	path = AWS-JPL-OSR-Challenge
+	url = https://github.com/richardfan1126/AWS-JPL-OSR-Challenge.git
+	branch = master
