@@ -12,7 +12,7 @@ elif [ "$1" == "train" ]; then
   	export DISPLAY=:0
   	xvfb-run -f $XAUTHORITY -l -n 0 -s ":0 -screen 0 1400x900x24" jwm &
   	x11vnc -bg -forever -nopw -rfbport 5900 -display WAIT$DISPLAY &
-  	roslaunch training_grounds $2 &
+  	roslaunch $2 $3 &
   	rqt &
   	rviz &
   fi
